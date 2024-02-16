@@ -1,10 +1,10 @@
 # Eng-de-Sofware-I---UNILAB
 App de delivery
-Funcionalidades:
+* Funcionalidades:
 Pesquisa de restaurantes
 Cardápio completo
 Personalização do pedido
-Rastreamento do pedido
+Rastreamento do pedido (backlog)
 Histórico de pedidos
 Avaliações e comentários
 
