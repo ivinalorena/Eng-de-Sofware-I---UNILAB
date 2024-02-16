@@ -8,7 +8,7 @@ Rastreamento do pedido (backlog)
 Histórico de pedidos
 Avaliações e comentários
 
-1- Ivina Lorena
-2- José Pedro
-3- Isaak Yuri
+1- Ivina Lorena ()
+2- José Pedro ()
+3- Isaak Yuri (Dev Front-end)
 4- 
