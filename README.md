@@ -11,4 +11,4 @@ Avaliações e comentários
 1- Ivina Lorena (Dev Back-End)
 2- José Pedro (Dev Back-End)
 3- Isaak Yuri (Dev Front-end)
-4- 
+4- Elêncio Calado ()
