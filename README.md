@@ -22,4 +22,7 @@ Avaliações e comentários
 
 4- Elêncio Calado (Dev Front-end)
 
-Link do Trello com o backlog do produto (https://trello.com/invite/engenhariadesoftwarei2/ATTI6818f382addf17124039d6e86e83edb76A63EE38)
+# Backlog do Produto:
+## História de usuário
+* Como usuário, desejo ver opções de restaurante e os menus disponíveis.
+* Como usuário, opções personalizáveis, como adicionar ou remover ingredientes.
