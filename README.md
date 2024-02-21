@@ -36,4 +36,4 @@ Avaliações e comentários
 
 # Backlog da Sprint:
 - Criar conta
-- [ ] Formulário Frontend - @IsaakYuri
+- [x] Formulário Frontend - @IsaakYuri
