@@ -24,5 +24,16 @@ Avaliações e comentários
 
 # Backlog do Produto:
 ## História de usuário
-* Como usuário, desejo ver opções de restaurante e os menus disponíveis.
-* Como usuário, opções personalizáveis, como adicionar ou remover ingredientes.
+
+* Como usuário, gostaria de adicionar observações ao pedido.
+* Como usuário, gostaria de fazer cadastro no aplicativo.
+* Como usuário, gostaria de poder apagar os meus dados da aplicação.
+* Como usuário cadastrado, gostaria de escolher uma opção do cardápio.
+* Como usuário, gostaria de poder apagar os meus dados da aplicação.
+* Como usuário, quero poder visualizar detalhes completos do menu.
+* Como usuário, gostaria de fazer login e logout na aplicação.
+* Como usuário, gostaria de ter acesso ao cardápio do restaurante.
+
+# Backlog da Sprint:
+
+
