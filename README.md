@@ -8,13 +8,12 @@ Cardápio completo
 
 Personalização do pedido
 
-Rastreamento do pedido (backlog)
-
 Histórico de pedidos
 
 Avaliações e comentários
 
 
+# Membros da Equipe:
 1- Ivina Lorena (Dev Back-End)
 
 2- José Pedro (Dev Back-End)
