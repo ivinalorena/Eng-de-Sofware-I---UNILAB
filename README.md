@@ -41,6 +41,7 @@ Avaliações e comentários
 * Como usuário, gostaria de ter acesso ao cardápio do restaurante.
 
 # Backlog da Sprint:
-
+- Estudos da tecnlogia ? - @IsaakYuri - Semana 1
+- 
 - Criar conta
   - [ ] Formulário Frontend - @IsaakYuri
