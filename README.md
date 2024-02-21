@@ -35,5 +35,5 @@ Avaliações e comentários
 * Como usuário, gostaria de ter acesso ao cardápio do restaurante.
 
 # Backlog da Sprint:
-- [x] Criar conta
+- Criar conta
 
