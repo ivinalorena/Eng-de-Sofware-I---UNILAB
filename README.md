@@ -22,6 +22,12 @@ Avaliações e comentários
 
 4- Elêncio Calado (Dev Front-end)
 
+# Tecnologias:
+- Fronted:
+
+- Backend:
+    - Python
+
 # Backlog do Produto:
 ## História de usuário
 
@@ -35,5 +41,6 @@ Avaliações e comentários
 * Como usuário, gostaria de ter acesso ao cardápio do restaurante.
 
 # Backlog da Sprint:
+
 - Criar conta
-  - [x] Formulário Frontend - @IsaakYuri
+  - [ ] Formulário Frontend - @IsaakYuri
