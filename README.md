@@ -3,9 +3,13 @@
 * Funcionalidades:
 
 Pesquisa de restaurantes
+
 Cardápio completo
+
 Personalização do pedido
+
 Histórico de pedidos
+
 Avaliações e comentários
 
 
