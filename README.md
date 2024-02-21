@@ -42,6 +42,5 @@ Avaliações e comentários
 
 # Backlog da Sprint:
 - Estudos da tecnlogia ? - @IsaakYuri - Semana 1
-- 
 - Criar conta
-  - [ ] Formulário Frontend - @IsaakYuri
+  - [ ] Formulário Frontend - @IsaakYuri - Semana 2
