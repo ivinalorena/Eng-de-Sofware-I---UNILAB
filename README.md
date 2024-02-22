@@ -45,4 +45,4 @@ Avaliações e comentários
 - REST API - POST: Flask - @IvinaLorena - Semana 1
 - Criar conta
   - [ ] Formulário Frontend - @IsaakYuri - Semana 2
-  - [ ] 
+  - [ ] ------------
