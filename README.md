@@ -41,8 +41,8 @@ Avaliações e comentários
 * Como usuário, gostaria de ter acesso ao cardápio do restaurante.
 
 # Backlog da Sprint:
-- Estudos da tecnlogia ? - @IsaakYuri - Semana 1
-- REST API - POST: Flask - @IvinaLorena - Semana 1
 - Criar conta
+  - [ ] Estudos da tecnlogia ? - @IsaakYuri - Semana 1
+  - [ ] REST API - POST: Flask - @IvinaLorena - Semana 1
   - [ ] Formulário Frontend - @IsaakYuri - Semana 2
   - [ ] ------------
