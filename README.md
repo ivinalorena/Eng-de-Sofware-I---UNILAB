@@ -86,4 +86,4 @@ Avaliações e comentários
     - [ ] Formulário Frontend - @IsaakYuri - Semana 2
     - [ ] ------------
   - Pedido e Checkout
-    - 
+    
