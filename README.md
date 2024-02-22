@@ -23,7 +23,7 @@ Avaliações e comentários
 4- Elêncio Calado (Dev Front-end)
 
 # Tecnologias:
-- Fronted:
+- Frontend:
 
 - Backend:
     - Python
