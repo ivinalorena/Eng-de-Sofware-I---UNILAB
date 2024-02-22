@@ -27,6 +27,7 @@ Avaliações e comentários
 
 - Backend:
     - Python
+ - Database:
 
 # Backlog do Produto:
 ## História de usuário
