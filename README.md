@@ -27,7 +27,9 @@ Avaliações e comentários
     - Html
     - Css
     - Javascript
-    - Nest
+    - React
+    - TailwindCss
+    - Shadcn Ui
 
 - Backend:
     - Python
@@ -51,6 +53,8 @@ Avaliações e comentários
 # Backlog da Sprint:
 - Implementar Base Tecnologica Backend: Python, Flask e as configurações do back end
 - Implementar Base Tecnologica Frontend:
+    - Estudos da tecnologia - React, TailwindCSS, Shadcn UI - @IsaakYuri e @ElêncioCalado - Semana 1
+    - Estrutura inicial do frontend - @IsaakYuri e @ElêncioCalado - Semana 2
 - Como usuário, gostaria de fazer cadastro no aplicativo.
   - Criar conta
     - [ ] Estudos da tecnlogia ? - @IsaakYuri - Semana 1
@@ -81,3 +85,5 @@ Avaliações e comentários
     - [ ] REST API - POST: Flask - @IvinaLorena - Semana 1
     - [ ] Formulário Frontend - @IsaakYuri - Semana 2
     - [ ] ------------
+  - Pedido e Checkout
+    - 
