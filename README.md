@@ -49,18 +49,17 @@ Avaliações e comentários
 * Como usuario admin gostaria de poder gerenciar os cardápios da aplicação.
 * 
 # Backlog da Sprint:
-- Implementar Base Tecnologica Backend: Flask e Python
+- Implementar Base Tecnologica Backend: Python, Flask e as configurações do back end
 - Implementar Base Tecnologica Frontend:
 - Como usuário, gostaria de fazer cadastro no aplicativo.
   - Criar conta
     - [ ] Estudos da tecnlogia ? - @IsaakYuri - Semana 1
     - [ ] REST API - POST: Flask - @IvinaLorena - Semana 1
     - [ ] Formulário Frontend - @IsaakYuri - Semana 2
-    - [ ] ------------
   - Fazer login
-    - [ ] Estudos da tecnlogia ? - @IsaakYuri - Semana 1
-    - [ ] REST API - POST: Flask - @IvinaLorena - Semana 1
-    - [ ] Formulário Frontend - @IsaakYuri - Semana 2
+    - [ ] Formulário de login - @IsaakYuri - Semana 1
+    - [ ] REST API - POST: Flask - @josedembo e @ivina Semana 1
+    - [ ] Formulário Frontend - @IsaakYuri - Semana 1
     - [ ] ------------
   - Fazer logout
     - [ ] Estudos da tecnlogia ? - @IsaakYuri - Semana 1
