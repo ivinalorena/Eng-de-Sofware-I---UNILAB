@@ -41,6 +41,9 @@ Avaliações e comentários
 * Como usuário, gostaria de ter acesso ao cardápio do restaurante.
 
 # Backlog da Sprint:
+- Implementar Base Tecnologica Backend: Flask e Python
+- Implementar Base Tecnologica Frontend:
+
 - Criar conta
   - [ ] Estudos da tecnlogia ? - @IsaakYuri - Semana 1
   - [ ] REST API - POST: Flask - @IvinaLorena - Semana 1
