@@ -49,7 +49,8 @@ Avaliações e comentários
 * Como usuario gostaria de avaliar pedidos que me foram entregues.
 * Como usuario gostaria de favoritar meus pratos preferidos.
 * Como usuario admin gostaria de poder gerenciar os cardápios da aplicação.
-* 
+
+
 # Backlog da Sprint:
 - Implementação Da Base Tecnologica Backend: Python, Flask e as configurações do back end - @IvinaLorena e @joseDembo
 - Implementação Da Base Tecnologica Frontend: Estudos da tecnologia - React, TailwindCSS, Shadcn UI - @IsaakYuri e @ElêncioCalado
@@ -65,19 +66,19 @@ Avaliações e comentários
     - [ ] REST API - POST: Flask - @IvinaLorena  
   - Fazer login
     - [ ] Formulario Front end - @ElêncioCalado 
-    - [ ] REST API - POST: Flask - @josedembo e @ivina 
+    - [ ] REST - POST: Flask - @JoseDembo
   - Fazer logout
     - [ ] Formulario Front end - @ElêncioCalado 
     - [ ] REST API - POST: Flask - @IvinaLorena 
   - Visualizar os informações do perfil
     - [ ] interface do usuário - @IsaakYuri 
-    - [ ] REST API - POST: Flask - @IvinaLorena 
+    - [ ] REST API - POST: Flask - @JoseDembo 
   - Alterar as informações do perfil
     - [ ] Formulario Front end - @IsaakYuri 
     - [ ] REST API - POST: Flask - @IvinaLorena 
   - Deletar as informações do perfil
     - [ ] Formulario Front end - @ElêncioCalado 
-    - [ ] REST API - POST: Flask - @IvinaLorena
+    - [ ] REST API - POST: Flask - @JoseDembo
           
 - Como usuário, gostaria de adicionar observações ao pedido.
     - [ ]  Formulario Front end - @ElêncioCalado 
