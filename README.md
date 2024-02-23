@@ -51,39 +51,34 @@ Avaliações e comentários
 * Como usuario admin gostaria de poder gerenciar os cardápios da aplicação.
 * 
 # Backlog da Sprint:
-- Implementar Base Tecnologica Backend: Python, Flask e as configurações do back end
-- Implementar Base Tecnologica Frontend:
-    - Estudos da tecnologia - React, TailwindCSS, Shadcn UI - @IsaakYuri e @ElêncioCalado - Semana 1
-    - Estrutura inicial do frontend - @IsaakYuri e @ElêncioCalado - Semana 2
+- Implementação Da Base Tecnologica Backend: Python, Flask e as configurações do back end
+- Implementação Da Base Tecnologica Frontend: Estudos da tecnologia - React, TailwindCSS, Shadcn UI - @IsaakYuri e @ElêncioCalado - Semana 1
+
+  **SEMANA 1** - Estudos de tecnologia e planejamentos.
+- Estudos da tecnologia - React, TailwindCSS, Shadcn UI - @IsaakYuri e @ElêncioCalado
+- Estrutura inicial do frontend - @IsaakYuri e @ElêncioCalado
+
+  **SEMANA 2** Inicio das implementações 
 - Como usuário, gostaria de fazer cadastro no aplicativo.
   - Criar conta
-    - [ ] Estudos da tecnlogia ? - @IsaakYuri - Semana 1
-    - [ ] REST API - POST: Flask - @IvinaLorena - Semana 1
-    - [ ] Formulário Frontend - @IsaakYuri - Semana 2
+    - [ ] Formulario Front end - @IsaakYuri 
+    - [ ] REST API - POST: Flask - @IvinaLorena  
   - Fazer login
-    - [ ] Formulário de login - @IsaakYuri - Semana 1
-    - [ ] REST API - POST: Flask - @josedembo e @ivina Semana 1
-    - [ ] Formulário Frontend - @IsaakYuri - Semana 1
-    - [ ] ------------
+    - [ ] Formulario Front end - @ElêncioCalado 
+    - [ ] REST API - POST: Flask - @josedembo e @ivina 
   - Fazer logout
-    - [ ] Estudos da tecnlogia ? - @IsaakYuri - Semana 1
-    - [ ] REST API - POST: Flask - @IvinaLorena - Semana 1
-    - [ ] Formulário Frontend - @IsaakYuri - Semana 2
-    - [ ] ------------
+    - [ ] Formulario Front end - @ElêncioCalado 
+    - [ ] REST API - POST: Flask - @IvinaLorena 
   - Visualizar os informações do perfil
-    - [ ] Estudos da tecnlogia ? - @IsaakYuri - Semana 1
-    - [ ] REST API - POST: Flask - @IvinaLorena - Semana 1
-    - [ ] Formulário Frontend - @IsaakYuri - Semana 2
-    - [ ] ------------
+    - [ ] interface do usuário - @IsaakYuri 
+    - [ ] REST API - POST: Flask - @IvinaLorena 
   - Alterar as informações do perfil
-    - [ ] Estudos da tecnlogia ? - @IsaakYuri - Semana 1
-    - [ ] REST API - POST: Flask - @IvinaLorena - Semana 1
-    - [ ] Formulário Frontend - @IsaakYuri - Semana 2
-    - [ ] -----------
+    - [ ] Formulario Front end - @IsaakYuri 
+    - [ ] REST API - POST: Flask - @IvinaLorena 
   - Deletar as informações do perfil
-    - [ ] Estudos da tecnlogia ? - @IsaakYuri - Semana 1
-    - [ ] REST API - POST: Flask - @IvinaLorena - Semana 1
-    - [ ] Formulário Frontend - @IsaakYuri - Semana 2
-    - [ ] ------------
-  - Pedido e Checkout
+    - [ ] Formulario Front end - @ElêncioCalado 
+    - [ ] REST API - POST: Flask - @IvinaLorena
+          
+- Como usuário, gostaria de adicionar observações ao pedido.
+    - [ ]  Formulario Front end - @ElêncioCalado 
     
