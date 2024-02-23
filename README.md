@@ -51,8 +51,8 @@ Avaliações e comentários
 * Como usuario admin gostaria de poder gerenciar os cardápios da aplicação.
 * 
 # Backlog da Sprint:
-- Implementação Da Base Tecnologica Backend: Python, Flask e as configurações do back end
-- Implementação Da Base Tecnologica Frontend: Estudos da tecnologia - React, TailwindCSS, Shadcn UI - @IsaakYuri e @ElêncioCalado - Semana 1
+- Implementação Da Base Tecnologica Backend: Python, Flask e as configurações do back end - @IvinaLorena e @joseDembo
+- Implementação Da Base Tecnologica Frontend: Estudos da tecnologia - React, TailwindCSS, Shadcn UI - @IsaakYuri e @ElêncioCalado
 
   **SEMANA 1** - Estudos de tecnologia e planejamentos.
 - Estudos da tecnologia - React, TailwindCSS, Shadcn UI - @IsaakYuri e @ElêncioCalado
