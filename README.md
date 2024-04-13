@@ -83,3 +83,5 @@ Avaliações e comentários
 - Como usuário, gostaria de adicionar observações ao pedido.
     - [ ]  Formulario Front end - @ElêncioCalado 
     
+# Diagrama UML da aplicação:
+![Diagrama UML](https://raw.githubusercontent.com/ivinalorena/Eng-de-Sofware-I---UNILAB/main/diagrama/diagrama_UML.drawio.png)
