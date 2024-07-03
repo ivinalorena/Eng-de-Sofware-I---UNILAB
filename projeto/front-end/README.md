@@ -1,30 +1,87 @@
-# React + TypeScript + Vite
+# Eng-de-Sofware-I---UNILAB
+  ## App de delivery
+* Funcionalidades:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pesquisa de restaurantes
 
-Currently, two official plugins are available:
+Cardápio completo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Personalização do pedido
 
-## Expanding the ESLint configuration
+Histórico de pedidos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Avaliações e comentários
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+# Membros da Equipe:
+1- Ivina Lorena (Dev Back-End)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2- José Pedro (Dev Back-End)
+
+3- Isaak Yuri (Dev Front-end)
+
+4- Elêncio Calado (Dev Front-end)
+
+# Tecnologias:
+- Frontend:
+    - Html
+    - Css
+    - Javascript
+    - React
+    - TailwindCss
+    - Shadcn Ui
+
+- Backend:
+    - Python
+    - Flask
+    - Docker
+ - Database:
+    - Postgres  
+
+# Backlog do Produto:
+## História de usuário
+
+* Como usuário, gostaria de fazer cadastro no aplicativo.
+* Como usuário, gostaria de adicionar observações ao pedido.
+* Como usuário cadastrado, gostaria de escolher uma opção do cardápio.
+* Como usuário, quero poder visualizar detalhes completos do menu.
+* Como usuário, gostaria de ter acesso ao cardápio do restaurante.
+* Como usuario gostaria de avaliar pedidos que me foram entregues.
+* Como usuario gostaria de favoritar meus pratos preferidos.
+* Como usuario admin gostaria de poder gerenciar os cardápios da aplicação.
+
+
+# Backlog da Sprint:
+- Implementação Da Base Tecnologica Backend: Python, Flask e as configurações do back end - @IvinaLorena e @joseDembo
+- Implementação Da Base Tecnologica Frontend: Estudos da tecnologia - React, TailwindCSS, Shadcn UI - @IsaakYuri e @ElêncioCalado
+
+  **SEMANA 1** - Estudos de tecnologia e planejamentos.
+- Estudos da tecnologia - React, TailwindCSS, Shadcn UI - @IsaakYuri e @ElêncioCalado
+- Estrutura inicial do frontend - @IsaakYuri e @ElêncioCalado
+
+  **SEMANA 2** Inicio das implementações 
+- Como usuário, gostaria de fazer cadastro no aplicativo.
+  - Criar conta
+    - [ ] Formulario Front end - @IsaakYuri 
+    - [ ] REST API - POST: Flask - @IvinaLorena  
+  - Fazer login
+    - [ ] Formulario Front end - @ElêncioCalado 
+    - [ ] REST - POST: Flask - @JoseDembo
+  - Fazer logout
+    - [ ] Formulario Front end - @ElêncioCalado 
+    - [ ] REST API - POST: Flask - @IvinaLorena 
+  - Visualizar os informações do perfil
+    - [ ] interface do usuário - @IsaakYuri 
+    - [ ] REST API - POST: Flask - @JoseDembo 
+  - Alterar as informações do perfil
+    - [ ] Formulario Front end - @IsaakYuri 
+    - [ ] REST API - POST: Flask - @IvinaLorena 
+  - Deletar as informações do perfil
+    - [ ] Formulario Front end - @ElêncioCalado 
+    - [ ] REST API - POST: Flask - @JoseDembo
+          
+- Como usuário, gostaria de adicionar observações ao pedido.
+    - [ ]  Formulario Front end - @ElêncioCalado 
+    
+# Diagrama UML da aplicação:
+![Diagrama UML](https://raw.githubusercontent.com/ivinalorena/Eng-de-Sofware-I---UNILAB/main/diagrama/diagrama_UML.drawio.png)
