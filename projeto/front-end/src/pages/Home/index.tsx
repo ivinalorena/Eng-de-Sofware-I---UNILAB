@@ -1,44 +1,63 @@
-import FoodCategory from "../../components/FoodCategory";
-import RestaurantCard from "../../components/RestaurantCard";
+import React from 'react';
+import { DataCart, PopularMenuItems } from '../../Mock/data';
+import PopularMenuCard from '../../components/PopularMenuCard';
+import RestaurantCard from '../../components/RestautantCard';
 
-const foodCategories = [
-  { image: 'https://cdn.pixabay.com/photo/2020/06/08/16/49/pizza-5275191_960_720.jpg', name: 'Pizza' },
-  { image: 'https://cdn.pixabay.com/photo/2017/10/15/11/41/sushi-2853382_1280.jpg', name: 'Sushi' },
-  // Adicione mais categorias conforme necessário
-];
-
-const restaurants = [
-  { image: 'https://cdn.pixabay.com/photo/2020/06/08/16/49/pizza-5275191_960_720.jpg', name: 'Pizza Palace', description: 'Delicious wood-fired pizza.' },
-  { image: 'https://cdn.pixabay.com/photo/2017/10/15/11/41/sushi-2853382_1280.jpg', name: 'Sushi World', description: 'Fresh sushi and sashimi.' },
-  // Adicione mais restaurantes conforme necessário
-];
-
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <div>
-      <main className="p-4">
-        <section className="my-8">
-          <h2 className="text-2xl font-bold mb-4">Categorias de Comida</h2>
-          <div className="flex space-x-4 overflow-x-auto">
-            {foodCategories.map((category, index) => (
-              <FoodCategory key={index} image={category.image} name={category.name} />
+    <div className="min-h-screen px-8">
+      <main className="mt-8">
+        <section className="text-center mb-8">
+          <h2 className="text-4xl font-bold mb-4">Encontre Sua Comida Favorita</h2>
+          <p className="text-gray-600 mb-4">O que você quer pedir?</p>
+          <div className="flex justify-center mb-4">
+            <input type="text" placeholder="Pesquisar..." className="p-2 border rounded-l" />
+            <button className="p-2 bg-red-500 text-white rounded-r">Pesquisar</button>
+          </div>
+          <div className="flex justify-center space-x-4">
+            <button className="p-2 bg-gray-200 rounded">Todos</button>
+            <button className="p-2 bg-gray-200 rounded">Pizza</button>
+            <button className="p-2 bg-gray-200 rounded">Bebidas</button>
+            <button className="p-2 bg-gray-200 rounded">Asiática</button>
+            <button className="p-2 bg-gray-200 rounded">Sobremesas</button>
+            <button className="p-2 bg-gray-200 rounded">Hambúrgueres</button>
+          </div>
+        </section>
+
+        <section className="mb-8">
+          <h3 className="text-2xl font-bold mb-4">Restaurantes Mais Próximos</h3>
+          <div className="grid grid-cols-4 gap-4">
+            {DataCart.map((restaurant) => (
+              <RestaurantCard
+                distance={restaurant.distance}
+                image={restaurant.image}
+                name={restaurant.name}
+                rating={restaurant.rating}
+                key={restaurant.name}
+              />
             ))}
           </div>
         </section>
-        <section className="my-8">
-          <h2 className="text-2xl font-bold mb-4">Restaurantes Populares</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {restaurants.map((restaurant, index) => (
-              <RestaurantCard key={index} image={restaurant.image} name={restaurant.name} description={restaurant.description} />
+
+        <section className="mb-8">
+          <h3 className="text-2xl font-bold mb-4">Menu Popular</h3>
+          <div className="grid grid-cols-4 gap-4">
+            {PopularMenuItems.map((item, index) => (
+              <PopularMenuCard
+                key={index}
+                imgSrc={item.imgSrc}
+                name={item.name}
+                description={item.description}
+                price={item.price}
+                restaurant={item.restaurant}
+                rating={item.rating}
+              />
             ))}
           </div>
-        </section>
-        <section className="my-8 text-center">
-          <h2 className="text-2xl font-bold mb-4">Baixe o App</h2>
-          <p className="mb-4">Peça sua comida favorita a qualquer hora, em qualquer lugar.</p>
-          <button className="bg-red-500 text-yellow-400 py-2 px-4 rounded-lg">Baixar Agora</button>
         </section>
       </main>
     </div>
   );
-}
+};
+
+export default Home;

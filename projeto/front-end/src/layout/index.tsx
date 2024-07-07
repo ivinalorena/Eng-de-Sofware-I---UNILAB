@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 
 export function DefaultLayout() {
   return (
-    <div>
+    <div >
       <Header />
       <Outlet />
       <Footer />
