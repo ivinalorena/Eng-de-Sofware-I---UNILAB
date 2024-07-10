@@ -15,9 +15,10 @@ from flask_jwt_extended import(
     
 )
 from flasgger import swag_from
+from app.config import Config
 
 
-auth = Blueprint("auth", __name__, url_prefix="/api/v1/auth")
+auth = Blueprint("auth", __name__, url_prefix=f"{Config.API_BASE_PATH}/auth")
 
 repossitor = UsuarioRepositor()
 
@@ -35,11 +36,13 @@ def register():
             }), HTTPStatus.BAD_REQUEST
         
         senha_hash = generate_password_hash(dados.senha)
-        usuario = repossitor.create(email=dados.email, senha=senha_hash, nome_de_usuario=dados.nome_de_usuario,
+        repossitor.create(email=dados.email, senha=senha_hash, nome_de_usuario=dados.nome_de_usuario,
                         nome_completo=dados.nome_completo, cpf=dados.cpf
                         )
         
-        return jsonify({"message": "User created", "user": get_user_dict(usuario)} ), HTTPStatus.CREATED
+        usuario = repossitor.select_by_email(dados.email)
+        
+        return jsonify({"message": "User created", "user": get_user_dict(usuario)}), HTTPStatus.CREATED
     
     except ValidationError as ex:
         msg = json.loads(ex.json(include_input=False, include_url=False))
