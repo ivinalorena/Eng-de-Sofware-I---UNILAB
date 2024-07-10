@@ -12,3 +12,5 @@ class Config:
     DB_NAME = os.environ.get("DB_NAME")
     DB_DIALECT = os.environ.get("DB_DIALECT")
     DB_DRIVER = os.environ.get("DB_DRIVER")
+    
+    API_BASE_PATH = "/api/v1"
