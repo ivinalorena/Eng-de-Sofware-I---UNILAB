@@ -22,20 +22,13 @@ class Usuario(Base):
 class Pedido(Base):
     __tablename__= "pedidos"
     id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
-    status = Column(String(20), nullable=False)
+    status = Column(String(20), nullable=True)
     usuario_id = Column(Integer, ForeignKey("usuarios.id", ondelete="CASCADE"), nullable=False)
     produto_id = Column(Integer, ForeignKey("restaurantes.id"))
     restaurante_id = Column(Integer, ForeignKey("restaurantes.id"))
     desconto = Column(Integer, nullable=True)
     created_at = Column(DateTime, default=datetime.now())
     updated_at = Column(DateTime, onupdate=datetime.now(), nullable=True)
-    
-
-class RestauranteProduto(Base):
-    __tablename__ = "restaurante_produto"
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    restaurante_id = Column(Integer, ForeignKey("restaurantes.id"))
-    produto_id = Column(Integer, ForeignKey("produtos.id"))
 
 class Restaurante(Base):
     __tablename__ = "restaurantes"
@@ -44,7 +37,7 @@ class Restaurante(Base):
     classificacao = Column(Integer, nullable=True)
     created_at = Column(DateTime, default=datetime.now())
     updated_at = Column(DateTime, onupdate=datetime.now())
-    produtos = relationship("Produto", secondary="restaurante_produto", back_populates="restaurantes")
+    produtos = relationship("Produto", backref="produtos.id", passive_deletes=True)
     
 
 class Produto(Base):
@@ -55,4 +48,4 @@ class Produto(Base):
     preco = Column(BigInteger, nullable=False, doc="valores expressos em centavos" )
     created_at = Column(DateTime, default=datetime.now())
     updated_at = Column(DateTime, onupdate=datetime.now())
-    restaurantes = relationship("Restaurante", secondary="restaurante_produto", back_populates="produtos")
+    restaurante_id = Column(Integer, ForeignKey("restaurantes.id", ondelete="CASCADE"), nullable=False)
