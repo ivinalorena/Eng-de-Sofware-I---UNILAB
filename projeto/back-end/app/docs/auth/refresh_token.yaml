@@ -1,0 +1,31 @@
+User login
+---
+
+tags:
+  - Authentication
+parameters:
+  - name: body
+    description: the body should contain the user login credentials
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - "nome_de_usuario"
+        - "senha"
+      properties:
+        nome_de_usuario:
+          type: "string"
+          example: "JohnDoth"
+        senha:
+          type: "string"
+          format: password
+          example: "**********"
+
+responses:
+  200:
+    description: when user successfully log in
+  400:
+    description: fails to login due bad request data
+  401:
+    description: user supplies incorrect credentials

@@ -1,6 +1,9 @@
 from flask import Flask 
 from app.controller.auth import auth 
 from app.config import Config
+from flask_jwt_extended import JWTManager
+from flasgger import Swagger, swag_from
+from app.swagger import template, swagger_config
 
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
@@ -14,5 +17,9 @@ def create_app(test_config=None):
         
     
     app.register_blueprint(auth)
+    
+    Swagger(app=app, config= swagger_config, template=template)
+    
+    JWTManager(app)
     
     return app
