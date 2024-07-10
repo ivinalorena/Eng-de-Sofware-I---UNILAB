@@ -11,7 +11,6 @@ class UsuarioRepositor:
                             nome_de_usuario=nome_de_usuario, nome_completo=nome_completo, cpf=cpf)
                 db.session.add(usuario)
                 db.session.commit()
-                return usuario
             except Exception as exception:
                 db.session.rollback()
                 raise exception
@@ -69,8 +68,9 @@ class UsuarioRepositor:
     def delete(self, id:int):
         with DBConnectionHandler() as db:
             try:
-                db.session.query(Usuario).filter(Usuario.id==id).delete()
+                counts = db.session.query(Usuario).filter(Usuario.id==id).delete()
                 db.session.commit()
+                return counts
             except Exception as ex:
                 db.session.rollback()
                 raise ex
