@@ -24,3 +24,10 @@ class LoginSchema(BaseModel):
     
 class RefreshTokenSchema(BaseModel):
     token: str
+    
+class ProdutoSchema(BaseModel):
+    nome: str
+    descricao: str
+    preco: int
+    restaurante_id: int
+    
