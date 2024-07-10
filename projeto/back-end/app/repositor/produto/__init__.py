@@ -10,7 +10,6 @@ class ProdutoRepositor:
                 produto = Produto(nome=nome, descricao=descricao, preco=preco, restaurante_id=restaurante_id)
                 db.session.add(produto)
                 db.session.commit()
-                return produto
             except Exception as exception:
                 db.session.rollback()
                 raise exception
@@ -33,7 +32,17 @@ class ProdutoRepositor:
                 return None
             except Exception as ex:
                 raise ex
-                
+            
+    def select_by_name(self, nome:str):
+        with DBConnectionHandler() as db:
+            try:
+                produto = db.session.query(Produto).filter(Produto.nome==nome).first()
+                return produto
+            except NoResultFound:
+                return None
+            except Exception as ex:
+                raise ex
+            
     def update(self, id:int, dados:dict):
         with DBConnectionHandler() as db:
             try:
