@@ -22,8 +22,8 @@ auth = Blueprint("auth", __name__, url_prefix=f"{Config.API_BASE_PATH}/auth")
 
 repossitor = UsuarioRepositor()
 
-@swag_from("../../docs/auth/signup.yaml")
 @auth.route("/signup", methods=["POST"])
+@swag_from("../../docs/auth/signup.yaml")
 def register():
     
     try:
@@ -48,8 +48,8 @@ def register():
         msg = json.loads(ex.json(include_input=False, include_url=False))
         return jsonify({"Error": f"{msg}"}), HTTPStatus.BAD_REQUEST
 
-@swag_from("../../docs/auth/login.yaml")
 @auth.route("/signin", methods=["POST"])
+@swag_from("../../docs/auth/login.yaml")
 def signin():
     try:
         dados_login = LoginSchema.model_validate_json(request.data)
@@ -62,7 +62,7 @@ def signin():
         if not check_password_hash(exist_user.senha, dados_login.senha):
             return jsonify({"Error": "email or password entered is not valid"}), HTTPStatus.BAD_REQUEST
 
-        token = create_access_token(exist_user.nome_de_usuario, expires_delta=timedelta(minutes=5))
+        token = create_access_token(exist_user.nome_de_usuario, expires_delta=timedelta(minutes=60))
         refresh_token  = create_refresh_token(exist_user.nome_de_usuario, expires_delta=False)
         
         return jsonify({
@@ -77,6 +77,7 @@ def signin():
 
 @auth.route("/refresh", methods=["POST"])
 @jwt_required(refresh=True)
+@swag_from("../../docs/auth/refresh_token.yaml")
 def refresh():
     nome_de_usuario = get_jwt_identity()
     new_token = create_access_token(identity=nome_de_usuario)

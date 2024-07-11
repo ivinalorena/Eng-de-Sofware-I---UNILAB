@@ -1,0 +1,29 @@
+Update user 
+---
+
+tags: 
+  - Usuario
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+  - in: path
+    name: id
+    required: true
+    type: integer
+    description: The number of user id to update
+  - in: body
+    name: body
+    required: true
+    schema:
+      type: object
+      properties:
+        nome_completo:
+          type: "string"
+          example: "Jose dembo"
+
+responses:
+  200: 
+    description: user data updated succefuly
+  400: 
+    description: bad resquest data entered

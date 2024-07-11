@@ -1,0 +1,20 @@
+Delete user data 
+---
+
+tags: 
+  - Usuario
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+  - in: path
+    name: id
+    type: integer
+    required: true
+    description: the id for deleted user
+
+responses:
+  200: 
+    description: user data updated succefuly
+  400: 
+    description: bad resquest data entered

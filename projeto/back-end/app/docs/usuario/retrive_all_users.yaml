@@ -1,0 +1,41 @@
+Get All users data
+---
+
+tags: 
+  - Usuario
+parameters:
+  - in: header
+    name: Authorization
+    required: true
+
+responses:
+  200: 
+    description: Retrived user datas sucessfully
+    schema:
+      type: array
+      items:
+        type: object
+        properties:
+          id:
+            type: integer
+            example: 1
+          email:
+            type: "email"
+            example: example@gmail.com
+          nome_de_usuario: 
+            type: string
+            example: harry45
+          nome_completo: 
+            type: string
+            example: herry potter
+          cpf:
+            type: integer
+            example: 63718392431
+          created_at:
+            type: datetime
+            example: Fri, 21 Apr 2023 04:38:01 GMT
+          updated_at: 
+            type: datetime
+            example: Fri, 21 Apr 2023 04:38:01 GMT
+  400: 
+    description: bad resquest data entered
