@@ -31,3 +31,12 @@ class ProdutoSchema(BaseModel):
     preco: int
     restaurante_id: int
     
+class RestauranteSchema(BaseModel):
+    nome: str
+    
+class PedidosSchema(BaseModel):
+    usuario_id: int
+    restaurante_id: int
+    produto_id:int
+
+    
