@@ -17,6 +17,26 @@ pydantic = "^2.8.2"
 flask-jwt-extended = "^4.6.0"
 flasgger = "^0.9.7.1"
 
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.5.1"
+taskipy = "^1.13.0"
+
+[tool.ruff]
+line-length = 79
+extend-exclude = ["migrations"]
+
+[tool.ruff.lint]
+preview = true
+select =['I', 'F', 'E', 'W', 'PL', 'PT']
+
+[tool.ruff.format]
+preview = true
+quote-style = 'single'
+
+[tool.taskipy.tasks]
+lint = 'ruff check . && ruff check . --diff'
+format = 'ruff check . --fix && ruff format .'
+run = 'flask run'
 
 [build-system]
 requires = ["poetry-core"]
