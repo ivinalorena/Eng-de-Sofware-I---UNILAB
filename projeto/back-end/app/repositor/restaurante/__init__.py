@@ -10,7 +10,6 @@ class RestauranteRepositor:
                 restaurante = Restaurante(nome=nome)
                 db.session.add(restaurante)
                 db.session.commit()
-                return Restaurante
             except Exception as exception:
                 db.session.rollback()
                 raise exception
@@ -28,6 +27,16 @@ class RestauranteRepositor:
         with DBConnectionHandler() as db:
             try:
                 restaurante = db.session.query(Restaurante).filter(Restaurante.id==id).first()
+                return restaurante
+            except NoResultFound:
+                return None
+            except Exception as ex:
+                raise ex
+            
+    def select_by_name(self, nome:str):
+        with DBConnectionHandler() as db:
+            try:
+                restaurante = db.session.query(Restaurante).filter(Restaurante.nome==nome).first()
                 return restaurante
             except NoResultFound:
                 return None
