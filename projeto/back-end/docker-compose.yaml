@@ -1,0 +1,32 @@
+version: "3"
+services:
+  # flask_app:
+  #   container_name: painelcovid_app
+  #   build:
+  #     context: .
+  #   image: josedembo/painelcovid:0.0.1
+  #   env_file:
+  #   - path: ./.env
+  #     required: true # default
+  #   ports:
+  #    - '5000:5000'
+  #   depends_on: 
+  #     postgresdb:
+  #       condition: service_healthy
+  #   command: sh -c "alembic upgrade head && flask run"
+
+  postgresdb:
+    image: postgres:latest
+    container_name: psqldb
+    env_file:
+    - path: ./.env
+      required: true # default
+    healthcheck:
+        test: ["CMD-SHELL", "pg_isready", "-d", "db_prod"]
+        interval: 30s
+        timeout: 10s
+        retries: 5
+    volumes:
+      - "./psqldata/:/var/lib/postgresql/data"
+    ports:
+      - "5432:5432"
