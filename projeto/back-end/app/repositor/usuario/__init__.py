@@ -59,8 +59,9 @@ class UsuarioRepositor:
     def update(self, id:int, dados:dict):
         with DBConnectionHandler() as db:
             try:
-                db.session.query(Usuario).filter(Usuario.id==id).update(dados)
+                is_user_updated =db.session.query(Usuario).filter(Usuario.id==id).update(dados)
                 db.session.commit()
+                return is_user_updated
             except Exception as ex:
                 db.session.rollback()
                 raise ex
