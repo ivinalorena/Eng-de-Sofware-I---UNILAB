@@ -30,6 +30,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          file: ./projeto/back-end/Dockerfile
+          context: ./projeto/back-end/
           push: true
           tags: josedembo/painelcovid:${{ github.sha }}
+          dockerfile: dockerfile
