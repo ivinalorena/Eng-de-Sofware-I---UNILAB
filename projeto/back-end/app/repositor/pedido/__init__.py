@@ -1,7 +1,7 @@
-from app.database.connection import DBConnectionHandler
-from app.model.models import Pedido
 from sqlalchemy.exc import NoResultFound
 
+from app.database.connection import DBConnectionHandler
+from app.model.models import Pedido
 
 
 class PedidoRepositor:
@@ -15,7 +15,7 @@ class PedidoRepositor:
             except Exception as exception:
                 db.session.rollback()
                 raise exception
-            
+
     def select(self):
         with DBConnectionHandler() as db:
             try:
@@ -25,29 +25,29 @@ class PedidoRepositor:
                 db.session.rollback()
                 raise ex
 
-    def select_by_id(self, id:int):
+    def select_by_id(self, id: int):
         with DBConnectionHandler() as db:
             try:
-                peidido = db.session.query(Pedido).filter(Pedido.id==id).first()
+                peidido = db.session.query(Pedido).filter(Pedido.id == id).first()
                 return peidido
             except NoResultFound:
                 return None
             except Exception as ex:
                 raise ex
-                
-    def update(self, id:int, dados:dict):
+
+    def update(self, id: int, dados: dict):
         with DBConnectionHandler() as db:
             try:
-                db.session.query(Pedido).filter(Pedido.id==id).update(dados)
+                db.session.query(Pedido).filter(Pedido.id == id).update(dados)
                 db.session.commit()
             except Exception as ex:
                 db.session.rollback()
                 raise ex
-            
-    def delete(self, id:int):
+
+    def delete(self, id: int):
         with DBConnectionHandler() as db:
             try:
-                db.session.query(Pedido).filter(Pedido.id==id).delete()
+                db.session.query(Pedido).filter(Pedido.id == id).delete()
                 db.session.commit()
             except Exception as ex:
                 db.session.rollback()

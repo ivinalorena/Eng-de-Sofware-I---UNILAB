@@ -1,19 +1,19 @@
 version: "3"
 services:
-  # flask_app:
-  #   container_name: painelcovid_app
-  #   build:
-  #     context: .
-  #   image: josedembo/painelcovid:0.0.1
-  #   env_file:
-  #   - path: ./.env
-  #     required: true # default
-  #   ports:
-  #    - '5000:5000'
-  #   depends_on: 
-  #     postgresdb:
-  #       condition: service_healthy
-  #   command: sh -c "alembic upgrade head && flask run"
+  flask_app:
+    container_name: restaurante_app
+    build:
+      context: .
+    image: josedembo/restaurante:0.0.1
+    env_file:
+    - path: ./.env
+      required: true # default
+    ports:
+     - '5000:5000'
+    depends_on: 
+      postgresdb:
+        condition: service_healthy
+    command: sh -c "alembic upgrade head && flask run"
 
   postgresdb:
     image: postgres:latest
