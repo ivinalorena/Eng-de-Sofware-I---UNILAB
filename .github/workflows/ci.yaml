@@ -33,4 +33,3 @@ jobs:
           context:  "{{defaultContext}}:projeto/back-end/"
           push: true
           tags: josedembo/painelcovid:${{ github.sha }}
-          file: ./dockerfile
