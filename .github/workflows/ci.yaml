@@ -28,9 +28,6 @@ jobs:
   ci_pipeline:
     runs-on: ubuntu-latest
     steps:
-      - name: lint and format
-        uses: actions/checkot
-        
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
 
