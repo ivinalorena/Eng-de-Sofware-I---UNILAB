@@ -11,10 +11,26 @@ defaults:
   working-directory: ./projeto/backend
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest 
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.10' 
+    - run: pip install ruff
+    - run: |
+      ruff check .
+      ruff fix .
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: 'style fixes by ruff'
   ci_pipeline:
     runs-on: ubuntu-latest
     steps:
-
+      - name: lint and format
+        uses: actions/checkot
+        
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
 
