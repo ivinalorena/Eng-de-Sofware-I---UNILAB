@@ -45,4 +45,4 @@ jobs:
         with:
           context:  "{{defaultContext}}:projeto/back-end/"
           push: true
-          tags: josedembo/painelcovid:${{ github.sha }}
+          tags: josedembo/restaurante:${{ github.sha }}
