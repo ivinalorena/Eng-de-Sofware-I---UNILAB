@@ -1,0 +1,34 @@
+name: Restaurante continues Integration pipeline
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+defaults:
+ run:
+  working-directory: ./projeto/backend
+
+jobs:
+  ci_pipeline:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN}}
+
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          push: true
+          tags: josedembo/painelcovid:${{ github.sha }}
